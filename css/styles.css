@@ -5,14 +5,34 @@
   --primary-text-color: #757575;
   --primary-white-color: #ffffff;
   --secondary-text-color: #212121;
-  --background-head-color: #F5F4FA;
+  --background-head-color: #f5f4fa;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  
 }
 
 .link {
@@ -21,9 +41,32 @@ body {
 
 .list {
   list-style: none;
+  /* font-style: normal; */
+}
+
+.header {
+  padding: 24px 0;
+  border: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .logo {
+  display: inline-block;
+
+  margin-right: 93px;
+
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -36,7 +79,26 @@ body {
   color: var(--accent-color);
 }
 
+/* студії, але для чого! {
+  color: var(--accent-text-color);
+  position: relative;
+} */
+
+.menu {
+  display: flex;
+}
+
+.menu.list:first-child {
+  padding-right: 0;
+}
+
+.header-list.list:first-child {
+  padding-right: 0;
+}
+
 .menu-item {
+  margin-right: 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -44,8 +106,22 @@ body {
   color: var(--primary-main-color);
 }
 
+.menu-item:last-child {
+  margin-right: 0;
+}
+
 .menu :hover,
 .menu :focus {
+  color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  margin-left: 344px;
+}
+
+.contacts :hover,
+.contacts :focus {
   color: var(--accent-color);
 }
 
@@ -57,16 +133,17 @@ body {
   color: var(--primary-text-color);
 }
 
-.contacts :hover,
-.contacts :focus {
-  color: var(--accent-color);
+
+
+.menu-nav {
+  display: flex;
+  align-items: center;
 }
 
 /* *********************************MAIN **************************/
 
-
-.main{
-background-color:#2F303A;
+.main {
+  background-color: #2f303a;
 }
 
 .title {
@@ -107,7 +184,7 @@ background-color:#2F303A;
 }
 
 .button-main:hover {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 .feature-title {
@@ -145,7 +222,7 @@ background-color:#2F303A;
   color: var(--primary-main-color);
 }
 
-.title-coomand-item{
+.title-coomand-item {
   background-color: var(--primary-white-color);
 }
 
@@ -212,7 +289,7 @@ background-color:#2F303A;
 
 .buttons-portfolio-item:hover,
 .buttons-portfolio-item:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
   color: var(--primary-white-color);
 }
 

@@ -56,6 +56,10 @@ body {
   cursor: pointer;
 }
 
+.link.current {
+  color: var(--accent-color);
+}
+
 /* *********************************HEADER**************************/
 
 .header {
@@ -212,12 +216,17 @@ body {
   background-color: #188ce8;
 }
 
-.future {
-  padding: 94px 15px;
+
+/* ***********************************ПЕРЕВАГИ************************************** */
+
+.features {
+  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 .feature-header {
   display: flex;
+  gap: 30px;
 }
 
 .feuture-item {
@@ -244,6 +253,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.tittle-works {
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .title-works-container {
@@ -275,6 +289,8 @@ body {
 
 .title-command {
   background-color: var(--background-head-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .title-command-list {
@@ -374,6 +390,11 @@ span.logo-footer-accent {
 
 /* *********************************PORTFOLIO****************************/
 
+.portfolio-main{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .buttons-list {
   display: flex;
   justify-content: center;
@@ -396,13 +417,14 @@ span.logo-footer-accent {
 
 .projects-container {
   padding: 20px 24px;
-  border-top: 1px solid var(--container-border-color);
   border-left: 1px solid var(--container-border-color);
   border-right: 1px solid var(--container-border-color);
   border-bottom: 1px solid var(--container-border-color);
 }
 
 .buttons-portfolio-item {
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -413,7 +435,6 @@ span.logo-footer-accent {
   text-decoration: none;
   border-color: transparent;
   border-radius: 4px;
-  padding: 6px 22px;
 }
 
 .header-button-portfolio {
